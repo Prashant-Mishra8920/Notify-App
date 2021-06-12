@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notes"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/very_light_grey">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="All Notes"
+                android:gravity="center|start"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/notes_menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_note_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/plus"
+        app:borderWidth="0dp"
+        app:elevation="0.1dp"
+        android:backgroundTint="@color/yellow"
+        app:tint="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/notes_toolbar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

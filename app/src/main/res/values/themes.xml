@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Notify" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/very_light_grey</item>
+        <item name="colorPrimaryVariant">@color/very_light_grey</item>
+        <item name="colorOnPrimary">@color/yellow</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/yellow</item>
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+    </style>
+    
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/splashscreen_background</item>
+    </style>
+    <style name="Theme.Notify.noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/very_light_grey</item>
+        <item name="colorPrimaryVariant">@color/very_light_grey</item>
+        <item name="colorOnPrimary">@color/yellow</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Notify.ActionBarStyle" parent="Theme.Notify">
+        <item name="titleTextStyle">@style/Theme.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="Theme.ActionBar.TitleTextStyle" parent="Theme.Notify">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ThemeOverlay.myTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:popupBackground">@drawable/round_background</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+    <style name="PopupModalAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="PopupModalDimen">
+        <item name="windowFixedWidthMajor">100%</item>
+        <item name="windowFixedWidthMinor">100%</item>
+    </style>
+</resources>

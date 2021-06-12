@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticationpage"
+    android:orientation="vertical"
+    android:padding="32dp">
+    <FrameLayout
+        android:id="@+id/authframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/login_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm already a user " />
+            <TextView
+                android:id="@+id/login_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign-in"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sign_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm a new user " />
+            <TextView
+                android:id="@+id/sign_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign-Up"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
